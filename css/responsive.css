@@ -1,0 +1,115 @@
+
+/* Tablet layout */
+
+@media (max-width: 900px) {
+  .hero {
+    gap: 25px;
+    padding-top: 42px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .feature-grid {
+    gap: 12px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+}
+
+/* Smartphone layout */
+
+@media (max-width: 680px) {
+  .wrap,
+  .public-nav {
+    width: calc(100% - 32px);
+  }
+
+  .public-nav {
+    height: 70px;
+  }
+
+  .brand-mark {
+    width: 37px;
+    height: 37px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 36px;
+    padding-bottom: 58px;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 47px;
+    letter-spacing: -1.8px;
+  }
+
+  .hero-copy > p {
+    font-size: 15px;
+  }
+
+  .hero-visual {
+    margin: 0 4px;
+    padding: 5px;
+  }
+
+  .preview-body {
+    padding: 15px;
+  }
+
+  .floating-note {
+    left: -3px;
+    bottom: -12px;
+  }
+
+  .feature-section {
+    padding: 48px 0;
+  }
+
+  .section-intro h2 {
+    font-size: 30px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 22px;
+  }
+
+  .site-footer {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .trust-row {
+    gap: 10px;
+  }
+
+  .hero-actions {
+    gap: 16px;
+  }
+}
+
+/* Very small phones */
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .preview-stats strong {
+    font-size: 20px;
+  }
+}

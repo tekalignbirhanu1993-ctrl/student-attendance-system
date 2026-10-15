@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Highschool</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="auth-page">
+  <a class="back-home" href="index.html">← Back to home</a>
+
+  <main class="auth-shell">
+    <section class="auth-brand-panel">
+      <a class="brand light-brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          Highschool
+          <small>ATTENDANCE PORTAL</small>
+        </span>
+      </a>
+
+      <div>
+        <span class="eyebrow light">YOUR SCHOOL, IN SYNC</span>
+        <h1>Better attendance starts with a clear picture.</h1>
+        <p>
+          One simple portal for school leaders, teachers, and students.
+        </p>
+      </div>
+
+      <div class="auth-foot">
+        Grades 9–12 · Attendance made clearer
+      </div>
+    </section>
+
+    <section class="auth-form-panel">
+      <div class="auth-form-wrap">
+        <span class="eyebrow">WELCOME BACK</span>
+        <h2>Sign in to your portal</h2>
+        <p class="muted">Use one of the demonstration accounts below.</p>
+
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            name="username"
+            autocomplete="username"
+            placeholder="Enter your username"
+            required
+          >
+
+          <label for="password">Password</label>
+
+          <div class="password-wrap">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Enter demo password"
+              required
+            >
+            <button
+              type="button"
+              class="password-toggle"
+              id="toggle-password"
+              aria-label="Show password"
+            >
+              Show
+            </button>
+          </div>
+
+          <div class="form-row">
+            <label class="check-label">
+              <input type="checkbox" id="remember">
+              Remember username
+            </label>
+            <span class="muted tiny">Demo environment</span>
+          </div>
+
+          <p id="login-error" class="form-error" role="alert" hidden></p>
+
+          <button
+            class="button primary full-width"
+            type="submit"
+            id="login-button"
+          >
+            Sign in <span>→</span>
+          </button>
+        </form>
+
+        <div class="demo-box">
+          <b>Demo accounts</b>
+
+          <div class="demo-account">
+            <span>
+              <b>Owner</b>
+              <small>Full school access</small>
+            </span>
+            <button type="button" data-demo-user="owner">
+              Use account
+            </button>
+          </div>
+
+          <div class="demo-account">
+            <span>
+              <b>Teacher</b>
+              <small>Class attendance tools</small>
+            </span>
+            <button type="button" data-demo-user="teacher">
+              Use account
+            </button>
+          </div>
+
+          <div class="demo-account">
+            <span>
+              <b>Student</b>
+              <small>Personal attendance view</small>
+            </span>
+            <button type="button" data-demo-user="student">
+              Use account
+            </button>
+          </div>
+
+          <p class="tiny muted">
+            Demo password for all accounts: <code>demo123</code>
+          </p>
+        </div>
+
+        <p class="security-note">
+          Prototype only: this demo does not provide secure authentication.
+          Do not use real passwords or confidential student data.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
